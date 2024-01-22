@@ -8,7 +8,11 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('generic.html')
+
+@app.route('/more')
+def more():
+    return render_template('elements.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
