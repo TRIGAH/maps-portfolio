@@ -71,6 +71,15 @@ input, select, textarea {
 	appearance: none;
 }
 
+.rounded-image {
+    border-radius: 50%; /* Set border-radius to 50% for a circular shape */
+    width: 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    float: center; /* Float the image to the right */
+    margin-left: 0px; 
+}
+
 /* Basic */
 
 	@-ms-viewport {
