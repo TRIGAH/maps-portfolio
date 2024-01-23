@@ -55,9 +55,28 @@ def home():
 def about():
     return render_template('generic.html')
 
+
 @app.route('/more')
 def more():
     return render_template('elements.html')
+
+
+@app.route('/register',methods=['GET','POST'])
+def contact():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        message = request.form.get('message')
+        print(f'{name},{email},{message}')
+
+    return render_template("index.html")
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
